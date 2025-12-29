@@ -1,0 +1,25 @@
+name: my-first-lab
+topology:
+  nodes:
+    # Arista cEOS switch
+    switch1:
+      kind: ceos
+      image: ceos:4.34.2F
+
+    # Nokia SR Linux router
+    router1:
+      kind: srl
+      image: ghcr.io/nokia/srlinux
+
+    # Linux host for testing
+    host1:
+      kind: linux
+      image: alpine:latest
+
+  links:
+    - endpoints: ["switch1:eth1", "router1:eth1"]
+    - endpoints: ["host1:eth1", "switch1:eth2"]
+
+mgmt:
+  network: mgmt-net
+  ipv4-subnet: 172.20.20.0/24
