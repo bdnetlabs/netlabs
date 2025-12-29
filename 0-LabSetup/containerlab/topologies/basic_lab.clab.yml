@@ -1,4 +1,4 @@
-name: my-first-lab
+name: basic_lab
 topology:
   nodes:
     # Arista cEOS switch
