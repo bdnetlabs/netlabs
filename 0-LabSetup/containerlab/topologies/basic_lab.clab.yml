@@ -8,7 +8,7 @@ topology:
 
     # Nokia SR Linux router
     router1:
-      kind: srl
+      kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
 
     # Linux host for testing
@@ -17,7 +17,7 @@ topology:
       image: alpine:latest
 
   links:
-    - endpoints: ["switch1:eth1", "router1:eth1"]
+    - endpoints: ["switch1:eth1", "router1:ethernet-1/1"]
     - endpoints: ["host1:eth1", "switch1:eth2"]
 
 mgmt:
