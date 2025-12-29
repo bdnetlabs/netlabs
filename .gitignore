@@ -1,0 +1,108 @@
+############################################
+# General / OS
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+
+############################################
+# Terraform
+############################################
+# Local Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# State files (never commit)
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Variable files with secrets
+*.tfvars
+*.tfvars.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# Terraform plan output
+*.tfplan
+
+############################################
+# Ansible
+############################################
+# Retry files
+*.retry
+
+# Ansible collections & roles (if vendored locally)
+collections/
+roles/
+
+# Vault password files
+.vault_pass
+.vault_password
+
+# Facts cache
+.fact_cache/
+ansible_facts/
+
+# Inventory files with secrets (adjust if needed)
+inventory/*.ini
+inventory/*.yml
+inventory/*.yaml
+
+############################################
+# containerlab
+############################################
+# Generated containerlab artifacts
+.clab/
+clab-*/           # per-lab runtime directories
+
+# Containerlab backups
+*.bak.yml
+*.bak.yaml
+
+# Packet captures
+*.pcap
+*.pcapng
+
+############################################
+# Docker
+############################################
+# Docker runtime files
+docker-compose.override.yml
+
+############################################
+# SSH / Keys / Secrets
+############################################
+*.pem
+*.key
+*.pub
+id_rsa
+id_ed25519
+
+############################################
+# Python (common with Ansible/Terraform tooling)
+############################################
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+############################################
+# Editors / IDEs
+############################################
+.vscode/
+.idea/
+*.iml
+
+############################################
+# Logs & Reports
+############################################
+logs/
+reports/
