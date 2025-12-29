@@ -61,6 +61,7 @@ inventory/*.yaml
 # Generated containerlab artifacts
 .clab/
 clab-*/           # per-lab runtime directories
+clab-*
 
 # Containerlab backups
 *.bak.yml
